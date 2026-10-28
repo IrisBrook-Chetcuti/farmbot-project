@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmBot Garden Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SMART GARDEN SYSTEM</p>
+      <h1>🌱 FarmBot Dashboard</h1>
+      <p class="subtitle">Your garden, all in one place.</p>
+    </div>
+    <div class="connection">
+      <span class="status-dot"></span>
+      <span>Demo connection</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">GARDEN OVERVIEW</p>
+        <h2>Welcome to your garden</h2>
+        <p>Monitor your sensors, water and crops from one dashboard.</p>
+      </div>
+      <div class="water-badge">💧 Water level <strong>85%</strong></div>
+    </section>
+
+    <section class="stats">
+      <article class="card stat">
+        <span class="stat-icon">🌡️</span>
+        <p>Current temperature</p>
+        <h2>24.5 <small>°C</small></h2>
+        <span class="muted">Target: 22°C</span>
+      </article>
+      <article class="card stat">
+        <span class="stat-icon">💦</span>
+        <p>Humidity</p>
+        <h2>60<small>%</small></h2>
+        <span class="muted">Air humidity</span>
+      </article>
+      <article class="card stat">
+        <span class="stat-icon">🌿</span>
+        <p>Soil moisture</p>
+        <h2>42<small>%</small></h2>
+        <span class="muted">Soil sensor reading</span>
+      </article>
+      <article class="card stat">
+        <span class="stat-icon">☀️</span>
+        <p>Light level</p>
+        <h2>35,000 <small>lux</small></h2>
+        <span class="good">Optimal · Target 30,000 lux</span>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PLANTS</p>
+          <h2>Crop beds</h2>
+        </div>
+        <span class="pill">5 beds</span>
+      </div>
+      <div class="crop-grid">
+        <article class="card crop">
+          <div class="crop-emoji">🥬</div>
+          <div><span class="bed">BED A1</span><h3>Butterhead Lettuce</h3><span class="good">● Optimal</span></div>
+          <p>Harvest forecast <strong>18 Mar 2026</strong></p>
+        </article>
+        <article class="card crop">
+          <div class="crop-emoji">🍅</div>
+          <div><span class="bed">BED A2</span><h3>Cherry Tomato</h3><span class="good">● Optimal</span></div>
+          <p>Harvest forecast <strong>19 Nov 2026</strong></p>
+        </article>
+        <article class="card crop">
+          <div class="crop-emoji">🥒</div>
+          <div><span class="bed">BED A3</span><h3>Cucumber</h3><span class="good">● Optimal</span></div>
+          <p>Harvest forecast <strong>19 Nov 2026</strong></p>
+        </article>
+        <article class="card crop">
+          <div class="crop-emoji">🫑</div>
+          <div><span class="bed">BED A4</span><h3>Capsicum</h3><span class="good">● Optimal</span></div>
+          <p>Harvest forecast <strong>9 Dec 2026</strong></p>
+        </article>
+        <article class="card crop">
+          <div class="crop-emoji">🥕</div>
+          <div><span class="bed">BED A5</span><h3>Carrot</h3><span class="good">● Optimal</span></div>
+          <p>Harvest forecast <strong>10 Nov 2026</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section bottom-grid">
+      <article class="card panel">
+        <p class="eyebrow">FARMBOT</p>
+        <h2>Robot status</h2>
+        <p><span class="status-dot"></span> Connected (sample data)</p>
+        <div class="coordinate-grid">
+          <div><span>X position</span><strong>120</strong></div>
+          <div><span>Y position</span><strong>45</strong></div>
+          <div><span>Z position</span><strong>0</strong></div>
+        </div>
+        <p class="muted">Last sample sync: 25 Feb 2026, 15:16 UTC</p>
+      </article>
+      <article class="card panel">
+        <p class="eyebrow">ENVIRONMENT</p>
+        <h2>Garden notes</h2>
+        <p>☀️ Light status: <strong>Optimal</strong></p>
+        <p>🌡️ Temperature target: <strong>22°C</strong></p>
+        <p>💧 Water reserve: <strong>85%</strong></p>
+        <p class="muted">These are example readings, not live FarmBot data.</p>
+      </article>
+    </section>
+
+    <footer>🌱 FarmBot Garden Dashboard · Sample data for demonstration</footer>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
